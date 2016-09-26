@@ -23,7 +23,8 @@ let styles = {
       width,
       height: '100%',
       transform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
-      transition: 'all 0.5s'
+      transition: 'all 0.5s',
+      WebkitTransform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)'
     };
   },
 

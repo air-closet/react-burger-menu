@@ -7,7 +7,8 @@ const styles = {
   pageWrap(isOpen, width, right) {
     return {
       transform: isOpen ? '' : right ? `translate3d(-${width}px, 0, 0)` : `translate3d(${width}px, 0, 0)`,
-      transition: 'all 0.5s'
+      transition: 'all 0.5s',
+      WebkitTransform: isOpen ? '' : right ? `translate3d(-${width}px, 0, 0)` : `translate3d(${width}px, 0, 0)`
     };
   },
 
